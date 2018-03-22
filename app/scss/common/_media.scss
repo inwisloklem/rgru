@@ -1,0 +1,35 @@
+@mixin lg-block {
+  @media (max-width: 68.75em) {
+    @content;
+  }
+}
+
+@mixin md-block {
+  @media (max-width: 60em) {
+    @content;
+  }
+}
+
+@mixin sm-block {
+  @media (max-width: 48.75em) {
+    @content;
+  }
+}
+
+@mixin xs-block {
+  @media (max-width: 32.5em) {
+    @content;
+  }
+}
+
+@mixin xxs-block {
+  @media (max-width: 21.25em) {
+    @content;
+  }
+}
+
+@mixin hi-dpi {
+  @media screen and (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    @content;
+  }
+}

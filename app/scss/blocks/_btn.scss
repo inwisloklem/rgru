@@ -1,0 +1,33 @@
+.btn {
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 0;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+
+  &::-moz-focus-inner {
+    border: none;
+  }
+
+  &__icon {
+    margin-right: 0.625rem;
+    color: $dusty-gray;
+    font-size: 0;
+  }
+
+  &__text {
+    border-bottom: solid 0.0625rem transparent;
+    color: $mariner;
+    font-size: 0.8125rem;
+    transition: 0.3s ease-in-out;
+    transition-property: border;
+  }
+
+  &:hover {
+    .btn__text {
+      border-bottom-color: rgba($mariner, 0.25);
+    }
+  }
+}

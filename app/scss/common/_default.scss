@@ -1,0 +1,28 @@
+:root {
+  color: $mine-shaft;
+  font-family: $font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+
+  &:focus {
+    outline: solid 0.25rem rgba($mariner, 0.25);
+    outline-offset: 0.25rem;
+  }
+}
+
+@media (pointer: coarse) {
+  outline: none;
+}

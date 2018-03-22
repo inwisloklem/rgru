@@ -1,0 +1,23 @@
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Noto Sans";
+  src: local("Noto Sans"), local("Noto Sans Regular"), local("NotoSans-Regular"), url("../fonts/NotoSans/NotoSans-Regular.woff2") format("woff2"), url("../fonts/NotoSans/NotoSans-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Noto Sans";
+  src: local("Noto Sans Bold"), local("NotoSans-Bold"), url("../fonts/NotoSans/NotoSans-Bold.woff2") format("woff2"), url("../fonts/NotoSans/NotoSans-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Noto Serif";
+  src: local("Noto Serif Bold"), local("NotoSerif-Bold"), url("../fonts/NotoSerif/NotoSerif-Bold.woff2") format("woff2"), url("../fonts/NotoSerif/NotoSerif-Bold.woff") format("woff");
+}
+
+$font: "Noto Sans", "Verdana", "Tahoma", sans-serif;
+$font-title: "Noto Serif", "Georgia", serif;

@@ -1,0 +1,76 @@
+.card {
+  position: absolute;
+  top: -0.0625rem;
+  right: -0.0625rem;
+  bottom: -0.0625rem;
+  left: -0.0625rem;
+  display: none;
+  padding: 1.25rem;
+  padding-top: 5.3125rem;
+  background-color: $white;
+  box-shadow: 0 0 0.9375rem 0 rgba($black, 0.15);
+  transition: 0.5s ease-in-out;
+  transition-property: opacity;
+
+  &_open {
+    display: block;
+    opacity: 0;
+  }
+
+  &_visible {
+    opacity: 1;
+  }
+
+  &__status,
+  &__note,
+  &__date {
+    font-size: 0.8125rem;
+    line-height: 1.75;
+  }
+
+  &__status {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    color: $lima;
+  }
+
+  &__date {
+    color: $dusty-gray;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    color: $dusty-gray;
+  }
+
+  &__link {
+    border-bottom: solid 0.0625rem transparent;
+    color: $mariner;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    transition-property: border;
+
+    &:hover {
+      border-bottom-color: rgba($mariner, 0.25);
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: 0.625rem;
+    left: 0.625rem;
+    border: none;
+    padding: 0.625rem;
+    background: none;
+    font-size: 0;
+    cursor: pointer;
+
+    &::-moz-focus-inner {
+      border: none;
+    }
+  }
+}
